@@ -39,14 +39,14 @@ const questions = [{
 }, {
     type: 'list',
     message: 'Which license will you use?',
-    choices: ['MIT', 'Apache 2.0', 'BSD 3', 'N/A'],
+    choices: ['Apache 2.0', 'MIT', 'BSD 2', 'BSD 3'],
     name: 'license'
 },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, function(err){
+    fs.writeFile(fileName, data, function (err) {
         if (err) {
             return console.log(err)
         } else {
@@ -58,9 +58,9 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(function (data) {
-        writeToFile('./utils/README.md', generateMarkdown(data));
-    })
+        .then(function (data) {
+            writeToFile('./utils/SampleREADME.md', generateMarkdown(data));
+        })
 }
 
 // Function call to initialize app

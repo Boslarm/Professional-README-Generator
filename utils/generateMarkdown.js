@@ -22,22 +22,20 @@ function generateMarkdown(data) {
   - [Test Instructions] (#instructions)
   - [Contact Info] (#contact)
   - [License] (#license)
-
   ## Description
   ${data.descritption}
-  
   ## Installation
- ${data.installation}
+  ${data.installation}
   ## Usage
-${data.usage}
+  ${data.usage}
   ## Contribution
-
-  ## Test Instructions
-
+  Can others contribute to this project?
+  ${data.contribution}
+  ## Testing Instructions
+  ${data.instructions}
   ## Contact Info
   [GitHub](https://github.com/${data.gitHub})
   [Email](mailto:${data.email})
-
   ## License
   ${renderLicenseSection(data.license)}
 `;
