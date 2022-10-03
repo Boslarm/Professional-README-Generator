@@ -59,7 +59,7 @@ function generateMarkdown(data) {
   - [Contact Info](#contact)
   - [License](#license)
   ## Description
-  ${data.descritption}
+  ${data.description}
   ## Installation
   ${data.installation}
   ## Usage
